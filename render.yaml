@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: unicef-palestine-chatbot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+    plan: free
